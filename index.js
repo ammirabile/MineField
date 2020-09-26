@@ -143,9 +143,10 @@ while (!gameOver){
         }
     }
     console.log(`Valid Play - ${play}`);
+    console.log(`You have ${lifes} lifes left!!! \n`);
     if (openCell(mineField,play) === true){
         lifes -= 1;
-        console.log(`BOOOOOOOM you lost 1 life - ${lifes} left`);
+        console.log(`BOOOOOOOM you lost 1 life - ${lifes} left\n`);
 
     }
     printField(mineField);
