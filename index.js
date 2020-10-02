@@ -96,8 +96,6 @@ function getNeighbours(board){
     }
 }
 
-
-
 board = createBoard();
 placeBombs(board);
 printBoard(board);
