@@ -79,12 +79,18 @@ function isValidCoord(coord1,coord2,board){
     return true;
 }
 
+//Open Cell
+function openCell(coord1,coord2){
+    if(board[coord1][coord2].isOpen === false){
+        board[coord1][coord2].isOpen = true;
+    }
+}
 
 //GetNeighbours
 function getNeighbours(board){
     let checkCoord = [-1,0,1];
     for (let i =0;i<board.length;i++){
-        for(let j = 0; j <board[i].length; j++){
+        for(let j = 0; j < board[i].length; j++){
             
         }
     }
