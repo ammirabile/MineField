@@ -120,6 +120,12 @@ function openCell(grid,coord){
     return grid[coord[0]][coord[2]].isBomb;
 }
 
+function getNeighbours(coord){
+    let checkCoord = [-1,0,1];
+
+
+}
+
 mineField = createMineField();
 printField(mineField);
 placeBombs(mineField);

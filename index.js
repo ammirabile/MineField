@@ -7,6 +7,7 @@ class cell {
         this.bombsClose = 0;
         this.isOpen = false;
         this.coord = [];
+        this.neighbours = [];
     }
 }
 
@@ -69,6 +70,27 @@ function placeBombs(board){
         }        
     }
 }
+//Check If Valid Record
+function isValidCoord(coord1,coord2,board){
+    console.log("Valid Coord Check :" + board.length);
+    if(coord1 < 0 || coord2 < 0 || coord1 >= board.length || coord2 >= board.length){
+        return false;
+    }
+    return true;
+}
+
+
+//GetNeighbours
+function getNeighbours(board){
+    let checkCoord = [-1,0,1];
+    for (let i =0;i<board.length;i++){
+        for(let j = 0; j <board[i].length; j++){
+            
+        }
+    }
+}
+
+
 
 board = createBoard();
 placeBombs(board);
